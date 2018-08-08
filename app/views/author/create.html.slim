@@ -4,3 +4,4 @@
     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
     p.py-3.w-75.mx-auto = @author.bio
     p = @author.trip_description
+    = link_to 'Journal Entries', author_entry_path(@author.id, id: @author.id), class: 'btn btn-dark'

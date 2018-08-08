@@ -4005,3 +4005,303 @@ ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?acc
 Completed 200 OK in 708ms (Views: 37.5ms | ActiveRecord: 2.1ms)
 
 
+Started GET "/" for ::1 at 2018-08-08 09:41:17 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.652362
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:41:17', '2018-08-08 07:41:17')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 693ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :author_id=>118, :controller=>"entries"}, missing required keys: [:id]):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(@author.id), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256172112240'
+Started GET "/" for ::1 at 2018-08-08 09:41:32 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.411265
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:41:32', '2018-08-08 07:41:32')[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 436ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :author_id=>nil, :controller=>"entries"}, missing required keys: [:id], possible unmatched constraints: [:author_id]):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(@author_id), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256180758560'
+Started GET "/" for ::1 at 2018-08-08 09:41:45 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.362239
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:41:46', '2018-08-08 07:41:46')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 393ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :author_id=>120, :controller=>"entries"}, missing required keys: [:id]):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(@author.id), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256202809600'
+Started GET "/" for ::1 at 2018-08-08 09:42:33 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.878159
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:42:34', '2018-08-08 07:42:34')[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (7.4ms)
+Completed 500 Internal Server Error in 917ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :author_id=>121, :controller=>"entries"}, missing required keys: [:id]):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(@author.id), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256206905860'
+Started GET "/" for ::1 at 2018-08-08 09:43:10 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.32068700000000006
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:43:11', '2018-08-08 07:43:11')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 343ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :author_id=>nil, :controller=>"entries"}, missing required keys: [:id], possible unmatched constraints: [:author_id]):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(params[:id]), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256198627620'
+Started GET "/" for ::1 at 2018-08-08 09:43:24 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.42143200000000003
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:43:25', '2018-08-08 07:43:25')[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 442ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"entries"}, missing required keys: [:author_id, :id]):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path, class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256100150780'
+Started GET "/" for ::1 at 2018-08-08 09:44:37 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.321124
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:44:37', '2018-08-08 07:44:37')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (214.8ms)
+Completed 500 Internal Server Error in 562ms (ActiveRecord: 3.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `entry' for #<#<Class:0x007fcb980deb28>:0x007fcb980dce18>):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(@author.id, entry), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256203069920'
+Started GET "/" for ::1 at 2018-08-08 09:48:08 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.651062
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:48:09', '2018-08-08 07:48:09')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 673ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :author_id=>125, :controller=>"entries"}, missing required keys: [:id]):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(@author.id), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256201165980'
+Started GET "/" for ::1 at 2018-08-08 09:48:37 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.323251
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:48:37', '2018-08-08 07:48:37')[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 343ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :author_id=>"126", :controller=>"entries", :id=>nil}, missing required keys: [:id]):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(@author.id, params[:id]), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256179317560'
+Started GET "/" for ::1 at 2018-08-08 09:50:04 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.381074
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:50:04', '2018-08-08 07:50:04')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (219.9ms)
+Completed 500 Internal Server Error in 616ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `author' for #<#<Class:0x007fcb980deb28>:0x007fcb98b08180>
+Did you mean?  @author):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(author.id), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256208397740'
+Started GET "/" for ::1 at 2018-08-08 09:50:18 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.640611
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:50:19', '2018-08-08 07:50:19')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 662ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :author_id=>#<Author id: 128, user_id: nil, user_name: "stellasquido", profile_picture: "https://scontent.cdninstagram.com/vp/0e9a68b0265a5...", bio: "Happy wife. Dog mom. Techie. All for the outdoors....", trip_description: nil, created_at: "2018-08-08 07:50:19", updated_at: "2018-08-08 07:50:19">, :controller=>"entries"}, missing required keys: [:id]):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(@author), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256199037940'
+Started GET "/" for ::1 at 2018-08-08 09:50:35 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.5570200000000001
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:50:36', '2018-08-08 07:50:36')[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (219.8ms)
+Completed 500 Internal Server Error in 791ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `entry' for #<#<Class:0x007fcb980deb28>:0x007fcb96ee2bb8>):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(@author, entry), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256193641200'
+Started GET "/" for ::1 at 2018-08-08 09:50:53 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.388707
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:50:53', '2018-08-08 07:50:53')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 413ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :author_id=>#<Author id: 130, user_id: nil, user_name: "stellasquido", profile_picture: "https://scontent.cdninstagram.com/vp/0e9a68b0265a5...", bio: "Happy wife. Dog mom. Techie. All for the outdoors....", trip_description: nil, created_at: "2018-08-08 07:50:53", updated_at: "2018-08-08 07:50:53">, :controller=>"entries"}, missing required keys: [:id]):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(@author), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256151131520'
+Started GET "/" for ::1 at 2018-08-08 09:53:08 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.371095
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:53:08', '2018-08-08 07:53:08')[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 395ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"entries", :id=>131}, missing required keys: [:author_id]):
+    4:     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    5:     p.py-3.w-75.mx-auto = @author.bio
+    6:     p = @author.trip_description
+    7:     = link_to 'Journal Entries', author_entry_path(id: @author.id), class: 'button'
+  
+app/views/author/create.html.slim:7:in `_app_views_author_create_html_slim__3343440706406935183_70256101802020'
+Started GET "/" for ::1 at 2018-08-08 09:53:28 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.657869
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/7c547e4632649f414e434a0a3171b28b/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg?_nc_eui2=AeHPwJq9MlIkM_eySkkq1RGe9AnB2Qt8VhtEAy5HNszInOcYlBoBFmFx18qnV-wmz4rcGaop1bq1ljJxNirl8v5c', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:53:29', '2018-08-08 07:53:29')[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (4.9ms)
+Completed 200 OK in 719ms (Views: 50.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:54:08 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.856467
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:54:08', '2018-08-08 07:54:08')[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.5ms)
+Completed 200 OK in 906ms (Views: 39.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:54:39 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.68764
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:54:40', '2018-08-08 07:54:40')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.7ms)
+Completed 200 OK in 732ms (Views: 35.0ms | ActiveRecord: 2.0ms)
+
+

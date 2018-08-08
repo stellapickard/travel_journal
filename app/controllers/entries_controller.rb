@@ -2,6 +2,11 @@ class EntriesController < ApplicationController
   before_action :set_author, only: [:index, :show]
 
   def index
+
+  end
+
+
+  def show
     response = Typhoeus.get("https://api.instagram.com/v1/users/self/media/recent/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2")
     result = JSON.parse(response.body)
     first_entry = result['data'][0]
@@ -24,14 +29,9 @@ class EntriesController < ApplicationController
     end
   end
 
-
-
-  def show
-  end
-
   private
 
   def set_author
-    @author = Author.find_by(id: 11)
+    @author = Author.find_by(params[:author_id])
   end
 end
