@@ -3669,3 +3669,339 @@ ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/medi
 Completed 200 OK in 1997ms (Views: 33.5ms | ActiveRecord: 1.4ms)
 
 
+Started GET "/" for ::1 at 2018-08-08 08:43:09 +0200
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AuthorController#create as HTML
+ETHON: Libcurl initialized
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.729412
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 06:43:11', '2018-08-08 06:43:11')[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (18.7ms)
+Completed 200 OK in 1248ms (Views: 464.1ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 08:51:44 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.37672700000000003
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 06:51:45', '2018-08-08 06:51:45')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.6ms)
+Completed 200 OK in 427ms (Views: 40.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 08:52:32 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.308923
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 06:52:32', '2018-08-08 06:52:32')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (4.0ms)
+Completed 200 OK in 387ms (Views: 68.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 08:53:30 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.351575
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 06:53:30', '2018-08-08 06:53:30')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (7.5ms)
+Completed 200 OK in 429ms (Views: 65.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 08:53:32 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.34287599999999996
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 06:53:33', '2018-08-08 06:53:33')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.8ms)
+Completed 200 OK in 394ms (Views: 35.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 08:54:45 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.30924700000000005
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 06:54:46', '2018-08-08 06:54:46')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.0ms)
+Completed 200 OK in 357ms (Views: 37.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 08:54:48 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.9575670000000001
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 06:54:49', '2018-08-08 06:54:49')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (2.7ms)
+Completed 200 OK in 1000ms (Views: 34.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 08:58:04 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.935846
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 06:58:05', '2018-08-08 06:58:05')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 984ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /Users/estellepi/PersonalProjects/travel_journal/app/assets/config
+  /Users/estellepi/PersonalProjects/travel_journal/app/assets/images
+  /Users/estellepi/PersonalProjects/travel_journal/app/assets/javascripts
+  /Users/estellepi/PersonalProjects/travel_journal/app/assets/stylesheets
+  /Users/estellepi/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/estellepi/.rvm/gems/ruby-2.3.0/gems/actioncable-5.1.6/lib/assets/compiled
+  /Users/estellepi/.rvm/gems/ruby-2.3.0/gems/actionview-5.1.6/lib/assets/compiled
+  /Users/estellepi/.rvm/gems/ruby-2.3.0/gems/turbolinks-source-5.1.0/lib/assets/javascripts
+  /Users/estellepi/PersonalProjects/travel_journal/node_modules):
+    4:     <title>InstaTravelJournal</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.scss:16
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__2215273268480297999_70169746425220'
+Started GET "/" for ::1 at 2018-08-08 09:01:05 +0200
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by AuthorController#create as HTML
+ETHON: Libcurl initialized
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=1.136704
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:01:07', '2018-08-08 07:01:07')[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (18.5ms)
+Completed 200 OK in 6295ms (Views: 5121.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:01:30 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.34179
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:01:30', '2018-08-08 07:01:30')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (6.3ms)
+Completed 200 OK in 415ms (Views: 61.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:01:33 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.31197
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/6ec73a3eae6c21501a4b421f4fa5b91b/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg?_nc_eui2=AeHNrH423jf6oMC3T9sDPOZRI5wneWJWtsbbQaS4S7dZhR-R_g09awF8rhkEwKj7cMU43CXpNek-j1zkmAIwUU_2', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:01:33', '2018-08-08 07:01:33')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.8ms)
+Completed 200 OK in 367ms (Views: 45.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:03:12 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.800895
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:03:13', '2018-08-08 07:03:13')[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (5.8ms)
+Completed 200 OK in 863ms (Views: 50.7ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:03:42 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.455259
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:03:42', '2018-08-08 07:03:42')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (5.0ms)
+Completed 200 OK in 503ms (Views: 37.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:03:44 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.368894
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:03:44', '2018-08-08 07:03:44')[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.1ms)
+Completed 200 OK in 413ms (Views: 36.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:04:01 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.334398
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:04:02', '2018-08-08 07:04:02')[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (11.1ms)
+Completed 200 OK in 395ms (Views: 53.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:04:11 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=2.779398
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:04:14', '2018-08-08 07:04:14')[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (4.8ms)
+Completed 200 OK in 2836ms (Views: 46.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:04:51 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.386331
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/a51ef0564ebb50a14bf9963e8b1a82a7/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg?_nc_eui2=AeEYKuk4Zp5BVbYGpDVBNNR2K8c_GRam9ZbSyaWm7VHwF9Z80IeiPJo7z-KnQXgtOgY5opp7TAzuQWuWTUhPEIic', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:04:51', '2018-08-08 07:04:51')[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (5.1ms)
+Completed 200 OK in 446ms (Views: 45.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:05:32 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.44980699999999996
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:05:33', '2018-08-08 07:05:33')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (4.9ms)
+Completed 200 OK in 510ms (Views: 49.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:05:35 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.326762
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:05:35', '2018-08-08 07:05:35')[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (5.3ms)
+Completed 200 OK in 384ms (Views: 47.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:05:50 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.319487
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/494aa6b452ffc63336734b0eee9894e3/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg?_nc_eui2=AeHbLqPn28qngYCEDgZgtrUMIqob-QHppg4N3n9dQNSeV7O5l1BqOYIp8rt11ZzJrxpcGlyAvwsRzHsN15zVxUcp', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:05:50', '2018-08-08 07:05:50')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.9ms)
+Completed 200 OK in 374ms (Views: 44.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:06:18 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.35150099999999995
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:06:19', '2018-08-08 07:06:19')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (4.7ms)
+Completed 200 OK in 417ms (Views: 54.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:08:47 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.882339
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:08:48', '2018-08-08 07:08:48')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.2ms)
+Completed 200 OK in 954ms (Views: 59.7ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:09:52 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=11.696353
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:10:04', '2018-08-08 07:10:04')[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.0ms)
+Completed 200 OK in 14040ms (Views: 2334.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:10:46 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.843939
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:10:47', '2018-08-08 07:10:47')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.4ms)
+Completed 200 OK in 892ms (Views: 37.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:10:56 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.30221600000000004
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:10:57', '2018-08-08 07:10:57')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.2ms)
+Completed 200 OK in 350ms (Views: 37.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:11:37 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.368292
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:11:37', '2018-08-08 07:11:37')[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.1ms)
+Completed 200 OK in 414ms (Views: 36.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:14:52 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=40.436199
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:15:32', '2018-08-08 07:15:32')[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.3ms)
+Completed 200 OK in 40481ms (Views: 36.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2018-08-08 09:19:23 +0200
+Processing by AuthorController#create as HTML
+ETHON: performed EASY effective_url=https://api.instagram.com/v1/users/self/?access_token=9861387.79be83d.e6f6b8f3923c4fa9949490f467c2eee2 response_code=200 return_code=ok total_time=0.66045
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO `authors` (`user_name`, `profile_picture`, `bio`, `created_at`, `updated_at`) VALUES ('stellasquido', 'https://scontent.cdninstagram.com/vp/0e9a68b0265a5c33dffdd6a23d66e507/5C0DC585/t51.2885-19/s150x150/12940196_1110652445639458_1718063923_a.jpg', 'Happy wife. Dog mom. Techie. All for the outdoors. Can be bribed with pancakes, waffles, red wine and ystervarkies...or a plane ticket somewhere!', '2018-08-08 07:19:24', '2018-08-08 07:19:24')[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  Rendering author/create.html.slim within layouts/application
+  Rendered author/create.html.slim within layouts/application (3.0ms)
+Completed 200 OK in 708ms (Views: 37.5ms | ActiveRecord: 2.1ms)
+
+

@@ -1,9 +1,6 @@
-h1 hello, the following author has been created
-h3 Username
-= @author.user_name
-h3 Profile Picture
-= image_tag @author.profile_picture
-h3 Bio
-= @author.bio
-h4 Trip description
-// include text area form field here to manually update field
+.row
+  .col-sm-6.offset-sm-3.text-center
+    h3.py-3.mt-5 = @author.user_name
+    = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    p.py-3.w-75.mx-auto = @author.bio
+    p = @author.trip_description
