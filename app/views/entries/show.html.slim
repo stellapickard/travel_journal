@@ -1,0 +1,24 @@
+small entries show view
+.row
+  .col-sm-6.offset-sm-3.text-center
+    h3.py-3.mt-5 = @author.user_name
+    = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    p.py-3.w-75.mx-auto = @author.bio
+    p = @author.trip_description
+
+
+
+.row 
+  .col-sm-6.offset-sm-3.text-center
+    = @author.entries.each do |entry|
+      = image_tag entry.image_url, class: 'w-75 mx-auto'
+      br
+      .row
+        .col-sm-4
+          p.mt-2.ml-5.pl-5.text-left = Time.at(entry.time_posted).strftime(" %e %B %Y")
+        .col-sm-8
+          p.mt-2.mr-5.pr-5.text-right = entry.location
+      br
+      p.w-75.mx-auto = entry.caption
+      hr.w-75.mx-auto.mt-3.mb-5
+
