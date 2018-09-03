@@ -15,8 +15,9 @@ class AuthorController < ApplicationController
     respond_to do |format|
       format.html
       format.pdf do
-        render :pdf => "author_show", 
-               template: "author/show.html.slim",
+        render :pdf => "author_show",
+               layout: "pdf_layout",
+               template: "author/show.pdf.slim",
                locals: { author: @author }
       end
     end
