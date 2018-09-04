@@ -12,6 +12,16 @@ class AuthorController < ApplicationController
   end
 
   def show
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render :pdf => "author_show",
+               layout: "pdf_layout",
+               template: "author/show.pdf.slim",
+               page_size: "A5",
+               locals: { author: @author }
+      end
+    end
   end
 
   def create

@@ -5,12 +5,14 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  // text-rendering: geometricPrecision;
+  text-rendering: optimizeLegibility;
 }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 13px;
+  line-height: 17px;
 }
 
 pre {
@@ -82,3 +84,4 @@ div {
 label {
   display: block;
 }
+

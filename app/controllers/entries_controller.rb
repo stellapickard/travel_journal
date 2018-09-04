@@ -30,6 +30,17 @@ class EntriesController < ApplicationController
   end
 
   def show
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render :pdf => "entries_show",
+               layout: "pdf_layout",
+               template: "entries/show.pdf.slim",
+               image_dpi: 600,
+               page_width: 210,
+               page_height: 210
+      end
+    end
   end
 
   private
