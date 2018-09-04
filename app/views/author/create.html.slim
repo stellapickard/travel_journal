@@ -7,4 +7,7 @@
     / = link_to 'Journal Entries', author_entry_path(@author.id, id: @author.id), class: 'btn btn-dark'
     - unless @author.trip_description.present?
       = link_to 'Add trip description', edit_author_path(@author)
+    br
+    = link_to "Get PDF", author_path(@author, format: :pdf)
+    br
     = button_to 'GET MY JOURNAL ENTRIES', new_author_entry_path(@author), class: 'btn btn-dark mt-3'
