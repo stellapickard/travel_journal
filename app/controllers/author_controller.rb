@@ -18,7 +18,6 @@ class AuthorController < ApplicationController
         render :pdf => "author_show",
                layout: "pdf_layout",
                template: "author/show.pdf.slim",
-               page_size: "A5",
                locals: { author: @author }
       end
     end
