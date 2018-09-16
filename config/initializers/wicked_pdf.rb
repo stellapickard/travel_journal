@@ -7,7 +7,6 @@
 # To learn more, check out the README:
 #
 # https://github.com/mileszs/wicked_pdf/blob/master/README.md
-
 WickedPdf.config = {
   # Path to the wkhtmltopdf executable: This usually isn't needed if using
   # one of the wkhtmltopdf-binary family of gems.
@@ -21,8 +20,8 @@ WickedPdf.config = {
   
 }
 
-Mime::Type.register "application/pdf", :pdf
-
-if Rails.env.development?
+ Mime::Type.register "application/pdf", :pdf
+ if Rails.env.development?
   WickedPdf.config[:lowquality] = true
-end
+end 
+

@@ -1,0 +1,25 @@
+.row
+  div.page-break-after
+    .col-sm-6.offset-sm-3.text-center
+      h2.py-3.my-5.mb-3 = @author.user_name
+      = image_tag @author.profile_picture, class: 'profile-pic mt-3 mb-2'
+      h3.mt-5.pt-5 author biography
+      p.py-3.w-75.mx-auto.text-justify = @author.bio
+      - if @author.trip_description
+        h3 introduction
+        p.py-3.w-75.mx-auto.text-justify = @author.trip_description
+
+.row 
+  div.page-break-before
+    .col-sm-6.offset-sm-3.text-center
+      = @author.entries.each do |entry|
+        / the next two lines are a hack
+        p
+        | |
+        = image_tag entry.image_url, class: 'w-50 mx-auto mt-5 mb-3 pt-5'
+        br
+        p.sub-text = Time.at(entry.time_posted).strftime(" %e %B %Y")
+        p.sub-text = entry.location
+        hr.w-75.mx-auto.my-2
+        p.w-75.mx-auto.caption = entry.caption
+        

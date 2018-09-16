@@ -1,12 +1,9 @@
-small author show view
-.row
-  .col-sm-6.offset-sm-3.text-center
-    h3.py-3.mt-5 = @author.user_name
+.row.text-center.text-justify
+  .col-sm-6.offset-sm-3
+    h2.py-3.mt-5 = @author.user_name
     = image_tag @author.profile_picture, class: 'profile-pic mb-4'
-    p.py-3.w-75.mx-auto = @author.bio
-    p = @author.trip_description
-    = button_to 'GET MY JOURNAL ENTRIES', new_author_entry_path(@author)
-.row
-  .col-sm-6.offset-sm-3.text-center
-    small Journal entries
-    = render @author.entries
+    h3 author biography
+    p.py-3.w-75.mx-auto.text-justify = @author.bio
+    h3 introduction
+    p.py-3.w-75.mx-auto.text-justify = @author.trip_description
+    = button_to 'GET MY JOURNAL ENTRIES', new_author_entry_path(@author), class: 'btn btn-dark p-2 mt-5'

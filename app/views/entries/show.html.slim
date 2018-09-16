@@ -1,12 +1,15 @@
-.row
-  .col-sm-6.offset-sm-3.text-center
-    h3.py-3.mt-5 = @author.user_name
-    = image_tag @author.profile_picture, class: 'profile-pic mb-4'
-    p.py-3.w-75.mx-auto = @author.bio
-    p = @author.trip_description
-    hr.mx-auto.my-5
+= link_to "Get PDF", author_entry_path(@author.id, format: :pdf)
 
-.row 
+.row.text-center.text-justify
+  .col-sm-6.offset-sm-3
+    h2.py-3.mt-5 = @author.user_name
+    = image_tag @author.profile_picture, class: 'profile-pic mb-4'
+    h3 author biography
+    p.py-3.w-75.mx-auto.text-justify = @author.bio
+    h3 introduction
+    p.py-3.w-75.mx-auto.text-justify = @author.trip_description
+
+.row
   .col-sm-6.offset-sm-3.text-center
     = @author.entries.each do |entry|
       = image_tag entry.image_url, class: 'w-75 mx-auto'
@@ -19,4 +22,3 @@
       br
       p.w-75.mx-auto = entry.caption
       hr.w-75.mx-auto.mt-3.mb-5
-

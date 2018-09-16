@@ -3,3 +3,29 @@
 @import 'home';
 @import 'entries';
 
+@font-face {
+  font-family: 'EmojiSymbols';
+  src: url("/fonts/EmojiSymbols-Regular.woff") format("woff");
+}   
+
+div.page-break-after { 
+  display:block; 
+  clear:both; 
+  page-break-after:always; 
+}
+
+div.page-break-before { 
+  display:block; 
+  clear:both; 
+  page-break-before:always; 
+}
+
+.sub-text {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+p.caption { 
+  font-family: sans-serif, 'EmojiSymbols';
+}
+
